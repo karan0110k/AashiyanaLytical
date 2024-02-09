@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interior designing</title>
+    <style>
+
+        .start {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('https://source.unsplash.com/1920x1080/?interior-design'); /* Replace with Unsplash image URL */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    animation-name: kashish;
+    animation-duration: 10s;
+
+}
+@keyframes kashish{
+        0%   {background-image: url(knzaw.jpg);}
+        25%  {background-image: url(jsii.jpg);}
+        50%  {background-image: url(bed1.jpg);}
+        100% {background-image: url(bed2.jpg);}
+        }
+
+.logo {
+    height: 200px;
+    width: 300px;
+    margin-top: -20px;
+    cursor: pointer;
+}
+
+.navbar {
+    width: 100%;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+    margin-top: -50px;
+    position: relative; 
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: aliceblue;
+    text-transform: uppercase;
+    margin-top: 20px;
+    position: relative; 
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: transparent; 
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: width 0.3s ease; 
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+    background: #009688; 
+}
+
+        .content {
+            text-align: center;
+            color: #fff;
+            padding: 50px 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        
+        .content h1 {
+           font-size: 50px;
+           margin-top: 50px;
+           backdrop-filter: blur(10px); 
+           color: rgba(255, 255, 255, 0.8); 
+}
+
+
+        .content p {
+            margin: 20px auto;
+            font-weight: 100;
+            line-height: 25px;
+        }
+
+        
+        @media screen and (max-width: 768px) {
+            .start {
+                height: auto;
+            }
+
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 20px;
+            }
+
+            .navbar ul li {
+                margin: 10px 0;
+            }
+
+            .content {
+                padding: 20px;
+            }
+        }
+        #b{
+            font-size: 100px;
+            animation-name: size;
+            animation-duration: 10s;
+
+        }
+
+        @keyframes size{
+            from {font-size: 50px;}
+            to {font-size: 100px;}
+        }
+    </style>
+</head>
+
+<body>
+    <div class="start">
+        <div class="navbar">
+            <img src="l2.png" class="logo">
+            
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bedroom.html">Bedroom</a></li>
+                <li><a href="dining.html">Dining</a></li>
+                <li><a href="kitchen.html">Kitchen</a></li>
+                <li><a href="help.html">Help</a></li>
+            </ul>
+            
+        </div>
+        <div class="content">
+            <div id="b">ASHIYANAALYTICAL</div>
+           <marquee scrollamount="13"><h1>DESIGN YOUR HOUSE</h1></marquee> 
+            <div>
+                <button type="button"></button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
